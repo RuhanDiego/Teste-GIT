@@ -8,5 +8,3 @@ void iniciar_tempo();
 void imprimir_tempo();
 
 #endif
-//
-// Created by aluno on 05/05/25.
