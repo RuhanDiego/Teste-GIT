@@ -1,0 +1,1 @@
+/usr/bin/cc -Wl,--dependency-file=CMakeFiles/projeto-01.dir/link.d "CMakeFiles/projeto-01.dir/main.c.o" "CMakeFiles/projeto-01.dir/contador.c.o" "CMakeFiles/projeto-01.dir/util.c.o" -o projeto-01
