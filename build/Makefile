@@ -117,24 +117,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named projeto-01
+# Target rules for targets named projeto01
 
 # Build rule for target.
-projeto-01: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 projeto-01
-.PHONY : projeto-01
+projeto01: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 projeto01
+.PHONY : projeto01
 
 # fast build rule for target.
-projeto-01/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/projeto-01.dir/build.make CMakeFiles/projeto-01.dir/build
-.PHONY : projeto-01/fast
+projeto01/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/projeto01.dir/build.make CMakeFiles/projeto01.dir/build
+.PHONY : projeto01/fast
 
 contador.o: contador.c.o
 .PHONY : contador.o
 
 # target to build an object file
 contador.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/projeto-01.dir/build.make CMakeFiles/projeto-01.dir/contador.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/projeto01.dir/build.make CMakeFiles/projeto01.dir/contador.c.o
 .PHONY : contador.c.o
 
 contador.i: contador.c.i
@@ -142,7 +142,7 @@ contador.i: contador.c.i
 
 # target to preprocess a source file
 contador.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/projeto-01.dir/build.make CMakeFiles/projeto-01.dir/contador.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/projeto01.dir/build.make CMakeFiles/projeto01.dir/contador.c.i
 .PHONY : contador.c.i
 
 contador.s: contador.c.s
@@ -150,7 +150,7 @@ contador.s: contador.c.s
 
 # target to generate assembly for a file
 contador.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/projeto-01.dir/build.make CMakeFiles/projeto-01.dir/contador.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/projeto01.dir/build.make CMakeFiles/projeto01.dir/contador.c.s
 .PHONY : contador.c.s
 
 main.o: main.c.o
@@ -158,7 +158,7 @@ main.o: main.c.o
 
 # target to build an object file
 main.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/projeto-01.dir/build.make CMakeFiles/projeto-01.dir/main.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/projeto01.dir/build.make CMakeFiles/projeto01.dir/main.c.o
 .PHONY : main.c.o
 
 main.i: main.c.i
@@ -166,7 +166,7 @@ main.i: main.c.i
 
 # target to preprocess a source file
 main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/projeto-01.dir/build.make CMakeFiles/projeto-01.dir/main.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/projeto01.dir/build.make CMakeFiles/projeto01.dir/main.c.i
 .PHONY : main.c.i
 
 main.s: main.c.s
@@ -174,7 +174,7 @@ main.s: main.c.s
 
 # target to generate assembly for a file
 main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/projeto-01.dir/build.make CMakeFiles/projeto-01.dir/main.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/projeto01.dir/build.make CMakeFiles/projeto01.dir/main.c.s
 .PHONY : main.c.s
 
 util.o: util.c.o
@@ -182,7 +182,7 @@ util.o: util.c.o
 
 # target to build an object file
 util.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/projeto-01.dir/build.make CMakeFiles/projeto-01.dir/util.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/projeto01.dir/build.make CMakeFiles/projeto01.dir/util.c.o
 .PHONY : util.c.o
 
 util.i: util.c.i
@@ -190,7 +190,7 @@ util.i: util.c.i
 
 # target to preprocess a source file
 util.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/projeto-01.dir/build.make CMakeFiles/projeto-01.dir/util.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/projeto01.dir/build.make CMakeFiles/projeto01.dir/util.c.i
 .PHONY : util.c.i
 
 util.s: util.c.s
@@ -198,7 +198,7 @@ util.s: util.c.s
 
 # target to generate assembly for a file
 util.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/projeto-01.dir/build.make CMakeFiles/projeto-01.dir/util.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/projeto01.dir/build.make CMakeFiles/projeto01.dir/util.c.s
 .PHONY : util.c.s
 
 # Help Target
@@ -209,7 +209,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... projeto-01"
+	@echo "... projeto01"
 	@echo "... contador.o"
 	@echo "... contador.i"
 	@echo "... contador.s"

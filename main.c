@@ -1,25 +1,27 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include "contador.h"
 #include "util.h"
 
 int main(int argc, char *argv[]) {
     if (argc < 2) {
-        fprintf(stderr, "Uso: %s <arquivo> [palavra]\n", argv[0]);
-        return EXIT_FAILURE;
+        fprintf(stderr, "Uso: %s <arquivo> [palavra|--letra letra]\n", argv[0]);
+        return 1;
     }
 
-    iniciar_tempo();
+    const char *nome_arquivo = argv[1];
 
-    if (argc == 2) {
-        contar_todas_palavras(argv[1]);
+    if (argc == 4 && strcmp(argv[2], "--letra") == 0) {
+        contar_por_letra(nome_arquivo, argv[3][0]);
+    } else if (argc == 3) {
+        contar_ocorrencias(nome_arquivo, argv[2]);
+    } else if (argc == 2) {
+        contar_ocorrencias(nome_arquivo, NULL);
     } else {
-        contar_palavra_especifica(argv[1], argv[2]);
+        fprintf(stderr, "Uso inválido dos argumentos.\n");
+        return 1;
     }
 
-    imprimir_tempo();
-
-    return EXIT_SUCCESS;
-}//
-// Created by aluno on 05/05/25.
-//
+    return 0;
+}

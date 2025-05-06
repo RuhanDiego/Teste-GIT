@@ -122,7 +122,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=projeto_01
+CMAKE_PROJECT_NAME:STATIC=projeto01
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -190,6 +190,15 @@ CMAKE_TAPI:FILEPATH=CMAKE_TAPI-NOTFOUND
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 //Value Computed by CMake
+projeto01_BINARY_DIR:STATIC=/home/aluno/CLionProjects/Teste-GIT/build
+
+//Value Computed by CMake
+projeto01_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+projeto01_SOURCE_DIR:STATIC=/home/aluno/CLionProjects/Teste-GIT
+
+//Value Computed by CMake
 projeto_01_BINARY_DIR:STATIC=/home/aluno/CLionProjects/Teste-GIT/build
 
 //Value Computed by CMake
@@ -214,7 +223,7 @@ CMAKE_CACHE_MAJOR_VERSION:INTERNAL=3
 //Minor version of cmake used to create the current loaded cache
 CMAKE_CACHE_MINOR_VERSION:INTERNAL=31
 //Patch version of cmake used to create the current loaded cache
-CMAKE_CACHE_PATCH_VERSION:INTERNAL=6
+CMAKE_CACHE_PATCH_VERSION:INTERNAL=7
 //ADVANCED property for variable: CMAKE_COLOR_MAKEFILE
 CMAKE_COLOR_MAKEFILE-ADVANCED:INTERNAL=1
 //Path to CMake executable.

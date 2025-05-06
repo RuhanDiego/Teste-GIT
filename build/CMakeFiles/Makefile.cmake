@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
   "/home/aluno/CLionProjects/Teste-GIT/CMakeLists.txt"
-  "CMakeFiles/3.31.6/CMakeCCompiler.cmake"
-  "CMakeFiles/3.31.6/CMakeSystem.cmake"
+  "CMakeFiles/3.31.7/CMakeCCompiler.cmake"
+  "CMakeFiles/3.31.7/CMakeSystem.cmake"
   "/usr/share/cmake-3.31/Modules/CMakeCInformation.cmake"
   "/usr/share/cmake-3.31/Modules/CMakeCommonLanguageInclude.cmake"
   "/usr/share/cmake-3.31/Modules/CMakeGenericSystem.cmake"
@@ -47,5 +47,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/projeto-01.dir/DependInfo.cmake"
+  "CMakeFiles/projeto01.dir/DependInfo.cmake"
   )

@@ -1,7 +1,7 @@
 #ifndef CONTADOR_H
 #define CONTADOR_H
 
-void contar_todas_palavras(const char *arquivo);
-void contar_palavra_especifica(const char *arquivo, const char *busca);
+void contar_ocorrencias(const char *nome_arquivo, const char *palavra);
+void contar_por_letra(const char *nome_arquivo, char letra);
 
 #endif

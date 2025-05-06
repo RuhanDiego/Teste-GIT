@@ -1,10 +1,8 @@
 #ifndef UTIL_H
 #define UTIL_H
 
-#include <time.h>
-
-char *normalizar(const char *str);
-void iniciar_tempo();
-void imprimir_tempo();
+void remover_acentos(char *str);
+void limpar_pontuacao(char *str);
+void para_minusculas(char *str);
 
 #endif
