@@ -4,6 +4,7 @@
 #include "contador.h"
 #include "util.h"
 
+//Esta função analisa os argumentos da linha de comando e analisa qual função chamar. Ela também verifica se foi chamado o arquivo, e "pega" o seu nome.
 int main(int argc, char *argv[]) {
     if (argc < 2) {
         fprintf(stderr, "Uso: %s <arquivo> [palavra|--letra letra]\n", argv[0]);

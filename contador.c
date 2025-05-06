@@ -14,6 +14,7 @@ typedef struct {
     int contagem;
 } Palavra;
 
+//Esta função procura por uma palavra específica dentro do vetor palavra. Se encontrar, retorna o índice dentro do vetor. Se não encontrar, retorna -1. Ela evita que a mesma palavra seja adicionada duas vezes a contagem.
 static int encontrar_palavra(Palavra palavras[], int total, const char *palavra) {
     for (int i = 0; i < total; i++) {
         if (strcmp(palavras[i].palavra, palavra) == 0) {
@@ -22,7 +23,7 @@ static int encontrar_palavra(Palavra palavras[], int total, const char *palavra)
     }
     return -1;
 }
-
+// Esta função processa uma linha de texto do arquivo, divide em palavras (tokens) e normaliza as palavras. Esta função também registra as palavras no vetor, ou  atualiza caso já estejam lá.
 void processar_linha(char *linha, Palavra palavras[], int *total, const char *alvo, char letra_filtro, int modo_letra) {
     char *token = strtok(linha, " ,.-\n");
     while (token) {
@@ -58,6 +59,7 @@ void processar_linha(char *linha, Palavra palavras[], int *total, const char *al
     }
 }
 
+//Esta função faz a leitura do arquivo TXT, inicializa um vetor para armazenar palavras e contagens.
 void contar_ocorrencias(const char *nome_arquivo, const char *palavra) {
     FILE *arquivo = fopen(nome_arquivo, "r");
     if (!arquivo) {
@@ -93,7 +95,7 @@ void contar_ocorrencias(const char *nome_arquivo, const char *palavra) {
 
     fclose(arquivo);
 }
-
+//Esta função lista todas as palavras que começam com uma determinada letra.
 void contar_por_letra(const char *nome_arquivo, char letra) {
     FILE *arquivo = fopen(nome_arquivo, "r");
     if (!arquivo) {
